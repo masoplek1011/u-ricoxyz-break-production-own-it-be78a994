@@ -1,3 +1,6 @@
+// Break Production, Own It — deterministic single fixed output.
+// Stdlib only; no randomness, network, or time. Writes only
+// $MAKEFUN_OUTPUT_DIR/entry.txt (the entry line, no trailing newline).
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
